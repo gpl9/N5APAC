@@ -7,7 +7,7 @@ namespace PAC.DataAccess;
 
 public class StudentsRepository<T> : IStudentsRepository<Student> where T : class
 {
-    public static List<Student> students = new List<Student> { new Student() { Id = 1, Name = "Pedro" }, new Student() { Id = 2, Name = "Juan"}} ;
+    public static List<Student> students = new List<Student> { new Student() { Id = 1, Name = "Pedro", Age = 18 }, new Student() { Id = 2, Name = "Juan", Age = 25 } } ;
 
     public Student GetStudentById(int id)
     {
